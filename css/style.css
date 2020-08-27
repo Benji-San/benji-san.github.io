@@ -1,0 +1,454 @@
+/* Général */
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        color:#2B2E4A}
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Poppins', sans-serif;
+        color:#2B2E4A}
+
+    p{margin-top: 2rem;}
+
+    h3{
+        font-size: 3em;}
+
+    h4{
+        font-size: 1.5em;
+        color:#E84545;}
+
+    section{
+        margin-top:3em;}
+    
+  .fa{
+      color: #f1f1f1;}
+
+/* Overlay */
+
+    .overlay::before{
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: url('../images/noise.png') repeat 0 0 rgba(0,0,0,0.5);
+        top:0;
+        position: absolute;}
+
+    .overlay1::before{
+        background: url('../images/noise1.png') repeat 0 0 rgba(0,0,0,0.5);}
+
+/* HEADER */
+    .head-function {
+    display: inline-block;
+    margin: 5px;
+    padding-top: 10px;
+    font-size: 152%;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-top: 1px solid #fff; 
+    color: #fff;
+    }
+    .logo{
+        width: 30%;}
+
+    .bg-header{
+        background: #2B2E4A;}
+
+    header a{
+        color: #f1f1f1;}
+
+    header a:hover{
+        color: #e84545;}
+
+
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+        color: #e84545;}
+
+/* Partie Présentation */
+
+    #presentation{
+        background:url("../images/mt-fuji.jpg")no-repeat 0 #000;
+        height: 800px;
+        background-size: cover;
+        flex-direction: column;
+        position: relative;}
+
+    #presentation h1, #presentation h2{
+        color:#f1f1f1;
+        z-index: 1;}
+
+    .liens{z-index: 1;}
+
+#carrousel{
+    position:relative;
+    height:200px;
+    width:700px;
+    margin:auto;
+    
+}
+#carrousel ul li{
+    position:absolute;
+    top:0;
+    left:0;
+    list-style-type: none;
+}
+
+/* Partie Equipe */
+
+    #equipe{
+        flex-direction: column;}
+
+    #equipe .fa{
+        color:#f1f1f1;}
+
+    .flex{
+        display: flex;
+        flex-direction: column;}
+
+    .caroursel{
+        margin: 15%;}
+
+    .vignette{
+        width: 170px;
+        height: 170px;
+        border-radius: 12%;
+        opacity: 0.6;
+        padding: 0.6% 1.5%;}
+
+    .vignette.active{
+        transform: scale(1);
+        opacity: 5;}
+
+    .icon-titre{
+        width: 60px;
+        height: 60px;
+        background: #2B2E4A;
+        transform: rotate(45deg);
+        display: flex;
+        margin-bottom: 2em;}
+
+    .icon-titre .fa{
+        transform: rotate(-45deg);}
+
+/* Partie Compteur */
+
+    #compteur{
+        background: url(../images/tokyo.jpg)no-repeat 0 0 fixed #000;
+        position: relative;
+        height: 250px;
+        background-size: cover;
+        color:#f1f1f1;}
+
+    #compteur h4{
+        color: #E84545;
+        font-size: 2.5em;}
+
+    #compteur h5{
+        color:#f1f1f1;
+        text-transform: uppercase;}
+
+/* Configuration des icones pour la partie compteur*/
+
+    .icon-compteur{
+        width: 60px;
+        height: 60px;
+        transform: rotate(45deg);
+        border: 2px solid #f1f1f1;
+        display: flex;
+        justify-content :center;
+        align-items: center;
+        margin:0 auto;
+        margin-bottom: 5%;}
+
+}
+    .icon-loisir .fa{
+        width: 60px;
+        height: 60px;
+        transform: rotate(45deg);
+        border: 2px solid #f1f1f1;
+        display: flex;
+        justify-content :center;
+        align-items: center;
+        margin:0 auto;
+        margin-bottom: 5%;}
+
+
+
+    .icon-compteur .fa{
+        transform: rotate(-45deg);}
+
+/* Partie Portfolio */
+
+    #portfolio figure{
+        flex:1;
+        position: relative;}
+
+    #portfolio figcaption{
+        position: absolute;
+        top: 0;
+        color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 95%;
+        background: url("../images/noise.png") repeat 0 0 scroll rgba(0,0,0,0.3);
+        opacity:0;
+        transform: scale(0);
+        transition: all 2s;}
+
+    #portfolio h5{
+        color:#f1f1f1;}
+
+    #portfolio a:hover figcaption{
+        opacity: 1;
+        transform: scale(1);}
+
+    .effet-hover{overflow: hidden;width: 95%;}
+
+    #portfolio img{transition: all 2s;}
+    
+    #portfolio a:hover img{
+        transform: rotate(45deg) scale(2.5);}
+
+    /* Progress bar */
+
+    .progress{
+        margin-bottom: 2%;
+        width: 100%;
+        height: 35px;
+        background-color: whitesmoke;
+        position: relative;}
+
+    .progress-bar{
+        background-color:burlywood;
+        height: 35px;
+        width: 70%;
+        animation: barre-animee 5s 1;
+        text-align:start;
+        padding-left: 2%;}
+
+    .barre2{
+        animation: barre-animee2 5s 1;
+        background: burlywood;
+        width: 50%;}
+
+    .barre3{
+        animation: barre-animee3 5s 1;
+        background: burlywood;
+        width: 30%;}
+
+
+    .barre4{
+        animation: barre-animee4 5s 1;
+        background: burlywood;
+        width: 90%;}
+
+    .progress-bar::after{
+    
+        content: "";
+        border-left: 20px solid burlywood;
+        border-bottom: 19px solid transparent;
+        border-top: 19px solid transparent;
+        position: absolute;
+        top:0;
+        left: 70%;
+        animation: triangle 5s 1;}
+    
+    .barre2::after{
+        left: 50%;
+        border-left-color: burlywood;
+        animation: triangle2 5s 1;}
+
+    .barre3::after{
+        left: 30%;
+        border-left-color: burlywood;
+        animation: triangle3 5s 1;}
+
+    .barre4::after{
+        left: 90%;
+        border-left-color: burlywood;
+        animation: triangle4 5s 1;}
+
+    @keyframes barre-animee{
+        
+        0%{width: 0%;}
+        100%{width: 70%;}
+    }
+
+    @keyframes triangle{
+        0%{left: 0%;}
+        100%{left: 70%;}
+    }
+
+    @keyframes barre-animee2{
+        
+        0%{width: 0%;}
+        100%{width: 50%;}}
+
+    @keyframes triangle2{
+        0%{left: 0%;}
+        100%{left: 50%;}}
+    
+    @keyframes barre-animee3{
+        
+        0%{width: 0%;}
+        100%{width: 30%;}}
+
+    @keyframes triangle3{
+        0%{left: 0%;}
+        100%{left: 30%;}}
+
+    @keyframes barre-animee4{
+        
+        0%{width: 0%;}
+        100%{width: 90%;}}
+
+    @keyframes triangle4{
+        0%{left: 0%;}
+        100%{left: 90%;}}
+    .texte-barre{
+        text-transform: uppercase;
+        opacity: 1;
+        animation: texte-span 7s 1;}
+
+        @keyframes texte-span {
+        0%{opacity: 0;}
+        100%{opacity: 1;}}
+
+    /* Actualités */
+    
+    #actualites{
+        background: #f0f0f0;}
+    .actu{
+        margin-top: 3em;}
+        
+    #actualites article{
+        background: #fff;
+        border-top: 5px solid #E84545;
+        padding: 1em;
+        margin-bottom: 3em;
+        position: relative;
+        margin-top: 1.5em;
+        border-radius: 1em}
+
+    #actualites article a{
+        font-size: 0.7em;}
+
+    #actualites article span{
+        font-size: 0.7em;}
+
+    #actualites article p{
+        font-size: 0.9em;
+        margin-bottom: 3em;}
+
+    #actualites article a .fa{
+        color: #E84545}
+        
+    #actualites .icon-diplome{
+        background: #E84545;
+        position: absolute;
+        top: -20px;
+        left: 43%;
+        width: 40px;
+        height: 40px;}
+
+
+    #actualites .icon-article{
+        background: #E84545;
+        position: absolute;
+        top: -20px;
+        left: 43%;
+        width: 40px;
+        height: 40px;}
+
+    #actualites .icon-titre.icon-article i{
+        font-size: 1.4em;}
+    
+    #actualites h4{
+        margin-top: 1em;}
+
+    #actualites figure{
+        margin-bottom: -8.4%;
+        }
+
+    /* MAP */
+
+    #map{
+        flex-direction: column;}
+
+
+    .bandeau{
+        background: #E84545;}
+
+    .bandeau h6{
+        color: #f1f1f1;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        padding: 1.5em;}
+
+    /* CONTACT */
+
+    #contact form{
+        width: 75%;}
+
+    input[type="submit"]{
+        width: 100%;}
+
+    #contact .petit{
+        width: 75%;
+        text-align: center;}
+
+    /* FOOTER */
+
+    footer{
+        flex-direction: column;
+        background: #2B2E4A;
+        color: #f1f1f1;
+        border-top: 5px solid #E84545;
+        margin-top: 3em;
+        padding-bottom: 2.5em;}
+
+    footer h6{
+        color: #f1f1f1;
+        font-size: 1em;}
+
+    .social .fa{
+        color:#E84545;}
+
+    .etiquette{
+        width: 10em;
+        background: #E84545;
+        padding: 1em;
+        border-radius: 0 0 3% 3%;
+        margin-bottom: 2.5em;}
+
+    .social span{
+        width: 35px;
+        height: 35px;
+        background: #e84545;
+        transform: rotate(45deg);
+        margin: 0.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+    .social .fa{
+        transform: rotate(-45deg);
+        color:#f1f1f1;}
+
+    .social span:hover{
+        background: #2b2e4a;
+        border: 1px solid #e84545}
+
+    .test{
+    text-shadow:#bbe5ff 0 -1px 0,
+    #0098f8 1px 1px 0,
+    #018de6 2px 2px 0,
+    #006fb5 3px 3px 0,
+    #005386 4px 4px 0,
+    #004874 5px 5px 0,
+    #333 5px 5px 10px;
+    color:#26abff;}
+
+
